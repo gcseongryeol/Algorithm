@@ -1,0 +1,30 @@
+package array;
+
+import java.util.Scanner;
+
+public class _8958 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int num = 1;
+		
+		String score[] = new String[n];
+		
+		for(int i = 0; i < score.length; i++ ) {
+			score[i] = scan.nextLine();
+			if(score[i] == score[i+1]) {
+				num += 1;
+			}
+			
+			if(score[i] == ("X")) {
+				num = 0;
+			}
+		}
+		
+		System.out.println(num);
+		
+	}
+
+}
